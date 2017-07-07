@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background: #fff;
+  color: #333;
+  position: relative; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  font-style: normal;
+  padding: 7px 9px;
+  position: relative;
+  vertical-align: middle; }
+
+.container {
+  align-items: center;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  max-width: 1600px;
+  min-height: 47px;
+  position: relative; }
+  .container nav {
+    position: relative;
+    display: block;
+    float: left;
+    left: -15px;
+    margin-top: 8px;
+    z-index: 2;
+    font-weight: 700; }
+    @media only screen and (max-width: 1600px) {
+      .container nav {
+        margin-left: 30px; } }
+    .container nav::after {
+      clear: both; }
+    .container nav button {
+      margin-right: 6px;
+      height: 30px;
+      background: #fff;
+      transition: background-color 0.3s;
+      margin: 0; }
+      .container nav button:hover, .container nav button:active {
+        background-color: #f7f7f5; }
+      .container nav button .icon {
+        width: 16px;
+        height: 16px;
+        margin-top: -1px;
+        border: none; }
+    .container nav button:first-child {
+      border-radius: 3px;
+      border: 1px solid #e2e2e2;
+      box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.06);
+      border-bottom-color: #cecece; }
+      .container nav button:first-child .icon {
+        background-position: -35px -243px; }
+    .container nav button:nth-child(2) .icon {
+      background-position: -136px -276px; }
+    .container nav button:nth-child(3) .icon {
+      background-position: -456px -210px; }
+
+.sprite {
+  background-image: url(https://a1.nyt.com/assets/article/20170705-124018/images/sprite/sprite-no-repeat.svg); }
+
+.icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+  line-height: 0;
+  vertical-align: middle;
+  font-style: normal; }
+
+#logo {
+  position: absolute;
+  z-index: 1;
+  margin-top: 12px;
+  width: 100%; }
+  #logo a {
+    position: relative; }
+    #logo a img {
+      display: block;
+      margin: auto;
+      height: 26px;
+      width: 185px;
+      vertical-align: middle;
+      overflow: hidden;
+      position: relative;
+      margin: auto; }
+
+#tools {
+  display: block;
+  float: right;
+  position: relative;
+  margin-top: 8px;
+  margin-right: 15px;
+  z-index: 2; }
+  #tools button:first-child,
+  #tools button:nth-child(2) {
+    background-color: #6288A5;
+    border: 1px solid #4D7B9F;
+    border-radius: 3px;
+    color: #fff !important;
+    font-style: normal;
+    font-weight: 700;
+    padding: 7px 10px 6px;
+    text-decoration: none; }
+  #tools button:nth-child(3) {
+    background: none; }
+    #tools button:nth-child(3) .icon {
+      background-position: -86px -243px;
+      width: 16px;
+      height: 16px; }
+
+/*# sourceMappingURL=style.css.map */

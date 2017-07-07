@@ -1,0 +1,112 @@
+button
+  cursor: pointer
+  text-transform: uppercase
+  border: none
+  display: inline-block
+  font-weight: 700
+  font-size: 0.6875rem
+  font-style: normal
+  padding: 7px 9px
+  position: relative
+  vertical-align: middle
+
+.container
+  align-items: center
+  margin: auto
+  border-bottom: 1px solid #ccc
+  position: relative
+  max-width: 1600px
+  min-height: 47px
+  position: relative
+  nav
+    position: relative
+    display: block
+    float: left
+    left: -15px
+    margin-top: 8px
+    z-index: 2
+    font-weight: 700
+    @media only screen and (max-width: 1600px)
+      margin-left: 30px
+    &::after
+      clear: both
+    button
+      margin-right: 6px
+      height: 30px
+      background: #fff
+      transition: background-color 0.3s
+      margin: 0
+      &:hover,
+      &:active
+        background-color: #f7f7f5
+      .icon
+        width: 16px
+        height: 16px
+        margin-top: -1px
+        border: none
+    button:first-child
+      border-radius: 3px
+      border: 1px solid #e2e2e2
+      box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06)
+      border-bottom-color: #cecece
+      .icon
+        background-position: -35px -243px
+    button:nth-child(2)
+      .icon
+        background-position: -136px -276px
+    button:nth-child(3)
+      .icon
+        background-position: -456px -210px
+
+.sprite
+  background-image: url(https://a1.nyt.com/assets/article/20170705-124018/images/sprite/sprite-no-repeat.svg)
+
+.icon
+  background-repeat: no-repeat
+  display: inline-block
+  line-height: 0
+  vertical-align: middle
+  font-style: normal
+
+#logo
+  position: absolute
+  z-index: 1
+  margin-top: 12px
+  width: 100%
+  a
+    position: relative
+    img
+      display: block
+      margin: auto
+      height: 26px
+      width: 185px
+      vertical-align: middle
+      overflow: hidden
+      position: relative
+      margin: auto
+
+#tools
+  display: block
+  float: right
+  position: relative
+  margin-top: 8px
+  margin-right: 15px
+  z-index: 2
+  &::after
+    clear:both
+  button:first-child,
+  button:nth-child(2)
+    background-color: #6288A5
+    border: 1px solid #4D7B9F
+    border-radius: 3px
+    color: #fff !important
+    font-style: normal
+    font-weight: 700
+    padding: 7px 10px 6px
+    text-decoration: none
+  button:nth-child(3)
+    background: none
+    .icon
+      background-position: -86px -243px
+      width: 16px
+      height: 16px
