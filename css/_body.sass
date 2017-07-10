@@ -1,0 +1,111 @@
+.story-interupter
+  max-width: 975px
+  margin: auto
+  margin-bottom: 2.5rem
+  figcaption
+    font-size: .875rem
+    line-height: 1.125rem
+    font-weight: normal
+    color: #666
+    span:last-child
+      font-size: .6875rem
+      font-weight: 400
+
+.story-body-supplemental
+  max-width: 975px
+  margin: auto
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.story-body
+  width: 630px
+  flex-grow: 0
+
+.story-body-text
+  font-size: 1.0625rem
+  line-height: 1.0625rem
+  font-weight: 400
+  font-style: normal
+  margin-left: 40px
+  margin-bottom: 1em
+  strong
+    font-weight: 700
+
+
+.supplemental-items
+  display: flex
+  flex-flow: column nowrap
+  max-height: 900px
+  margin-bottom: 45px
+  width: 300px
+  .marginalia
+    margin-top: 75px
+
+  .module-heading
+    font-size: .75rem
+    line-height: .9375rem
+    font-weight: 700
+    color: #326891
+    margin-bottom: 1rem
+    text-transform: uppercase
+    .icon
+      position: relative
+      transition: background-color .3s
+      width: 20px
+      height: 13px
+      background: #879cd4
+      margin: -3px 8px 0 0
+      &::after
+        bottom: -4px
+        border-width: 4px 0 0 4px
+        transition: border-color .3s
+        content: ''
+        position: absolute
+        left: 45%
+        border-style: solid
+        border-color: #879cb4 transparent
+        display: block
+        width: 0
+
+  .comments-view
+    margin-bottom: 15px
+    .comment
+      margin-top: -auto
+      .commenter
+        line-height: 1.375rem
+        font-weight: 700
+        color: #333
+        display: inline-block
+      .comment-time
+        font-size: .75rem
+        line-height: .9375rem
+        font-weight: 300
+        font-style: 300
+        color: #999
+      .comment-text
+        display: block
+        font-size: .8125rem
+        line-height: 1rem
+        font-weight: 300
+        color: #666
+        margin: 0 0 1em 0
+
+  footer
+    border-top: 1px solid #e2e2e2
+    padding-top: 2px
+    ul
+      margin: 0
+      list-style: none
+      padding-left: 0
+      display: block
+      li
+        font-size: .625rem
+        line-height: 1.375rem
+        font-weight: 500
+        font-style: normal
+        display: inline-block
+        margin-right: 12px
+        text-transform: uppercase
+        cursor: pointer
+        color: #326891

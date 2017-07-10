@@ -17,7 +17,6 @@ button
   position: relative
   max-width: 1600px
   min-height: 47px
-  position: relative
   nav
     position: relative
     display: block
@@ -40,10 +39,9 @@ button
       &:active
         background-color: #f7f7f5
       .icon
-        width: 16px
-        height: 16px
         margin-top: -1px
         border: none
+
     button:first-child
       border-radius: 3px
       border: 1px solid #e2e2e2
@@ -57,6 +55,15 @@ button
     button:nth-child(3)
       .icon
         background-position: -456px -210px
+    @media only screen and (max-width: 975px)
+      button:nth-child(2) span,
+      button:nth-child(3) span
+        display: none
+    @media only screen and (max-width: 615px)
+      button span,
+      button:nth-child(2),
+      button:nth-child(3)
+        display: none
 
 .sprite
   background-image: url(https://a1.nyt.com/assets/article/20170705-124018/images/sprite/sprite-no-repeat.svg)
@@ -67,6 +74,8 @@ button
   line-height: 0
   vertical-align: middle
   font-style: normal
+  width: 16px
+  height: 16px
 
 #logo
   position: absolute
@@ -94,19 +103,39 @@ button
   z-index: 2
   &::after
     clear:both
-  button:first-child,
-  button:nth-child(2)
+  button:first-child
+    display: none
+    background: none
+  button:nth-child(2),
+  button:nth-child(3)
     background-color: #6288A5
     border: 1px solid #4D7B9F
     border-radius: 3px
-    color: #fff !important
+    color: #fff
     font-style: normal
     font-weight: 700
     padding: 7px 10px 6px
     text-decoration: none
-  button:nth-child(3)
+  button:nth-child(4)
     background: none
     .icon
       background-position: -86px -243px
-      width: 16px
-      height: 16px
+  button:nth-child(5)
+    display: none
+    background: none
+    .icon
+      background-position: -456px -210px
+  @media only screen and (max-width: 1024px)
+    button:first-child
+      display: inline-block
+    button:nth-child(2)
+      display: none
+  @media only screen and (max-width: 730px)
+    button:first-child
+      display: none
+  @media only screen and (max-width: 615px)
+    button:nth-child(3),
+    button:nth-child(4)
+      display: none
+    button:nth-child(5)
+      display: inline-block
